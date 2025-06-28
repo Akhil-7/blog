@@ -104,10 +104,12 @@ blog/settings.py
 | POST   | `api/user/login/`        | Authenticate a user      |
 
 ### ✅ Blog Management
-| Method | Endpoint                               | Description                             |
-|--------|----------------------------------------|-----------------------------------------|
-| GET    | `api/blog/blogs/`                      | Retrieve all blogs                      |
-| POST   | `api/blog/blogs/`                      | Create a new blog                       |
-| GET    | `api/blog/blogs/<int:pk>/`             | Retrieve a specific blog with comments  |
-| DELETE | `api/blog/blogs/<int:pk>/`             | Delete a specific task                  |
-| POST   | `api/blog/blogs/<int:pk>/add_comment/` | View dashboard summary or stats         |
+| Method | Endpoint                                             | Description                                                  |
+|--------|------------------------------------------------------|--------------------------------------------------------------|
+| GET    | `api/blog/blogs/`                                    | Retrieve all blogs                                           |
+| GET    | `api/blog/blogs/?serach=search`                      | Retrieve all blogs contains search tearm                     |
+| GET    | `api/blog/blogs/?page_num=_any_num_`                 | Retrieve all blogs in the current pagination                 |
+| POST   | `api/blog/blogs/`                                    | Create a new blog                                            |
+| GET    | `api/blog/blogs/<int:pk>/?comment_page_num=_any_num_`| Retrieve a specific blog with comments in current pagination |
+| DELETE | `api/blog/blogs/<int:pk>/`                           | Delete a specific task                                       |
+| POST   | `api/blog/blogs/<int:pk>/add_comment/`               | View dashboard summary or stats                              |
