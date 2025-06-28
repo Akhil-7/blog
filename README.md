@@ -49,7 +49,7 @@ BLOG/
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/Akhil-7/blogmanagement.git
+   git clone https://github.com/Akhil-7/blog.git
    cd blog
    ```
 
